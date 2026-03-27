@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Sushi Paradise: assapora il gusto autentico del sushi fresco a Padova, a pochi passi dalla stazione. Pronti a servirti con piatti creativi e ingredienti di alta qualità. Prenota il tuo tavolo!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations - Sushi Paradise</title>
+  <link rel="stylesheet" href="reservation.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"></noscript>
+</head>
+
+<body>
+  <div id="sfondo-intro">
+    <div class="navigazione">
+      <div class="logo">
+        <p><span class="underline"><a href="index.html">Sushi Paradise</a></span></p>
+      </div>
+      <div class="nav vanish">
+        <nav>
+          <ul>
+            <li><span class="underline"><a href="menu.html">Menu</a></span></li>
+            <li><span class="underline"><a href="about-us.html">About us</a></span></li>
+            <li><span class="underline"><a href="news.html">News</a></span></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="reservations vanish ">
+        <p><span class="underline"><a href="reservation.html">Reservations</a></span></p>
+      </div>
+        <div class="hamburger">
+          <span ></span>
+          <span ></span>
+          <span ></span>
+        </div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><span><a href="menu.html">Menu</a></span></li>
+            <li><span><a href="about-us.html">About us</a></span></li>
+            <li><span><a href="news.html">News</a></span></li>
+            <li><span><a href="reservation.html">Reservations</a></span></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="intro">
+      <h1>Book Your Table</h1>
+      <p>You can book your table using the form below, or call us at +39 123 456 7890</p>
+    </div>
+  </div>
+  <form action="" method="post">
+    <div class="form">
+      <h3>Make a Reservation</h3>
+      <div class="full-name">
+        <label for="name">
+          <p>Full Name</p>
+        </label>
+        <input type="text" name="name" id="name" placeholder="Norvil Pedrel" required>
+
+      </div>
+      <div class="email">
+        <label for="email">
+          <p>Email</p>
+        </label>
+        <input type="email" name="email" id="email" placeholder="pedrelitgmail.com" required>
+      </div>
+      <div class="phone">
+        <label for="phone">
+          <p>Phone Number (include the prefix)</p>
+        </label>
+        <input type="tel" name="phone" id="phone" minlength="12" placeholder="+39 123 456 7890" required>
+      </div>
+      <div class="guests">
+        <label for="guests">
+          <p>Number of Guests</p>
+        </label>
+        <select name="guests" id="guests" required>
+          <option value="1">1 Guest</option>
+          <option value="2" selected>2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5">5 Guests</option>
+          <option value="6">6 Guests</option>
+          <option value="7">7 Guests</option>
+          <option value="8">8 Guests</option>
+          <option value="9+">9+ Guests</option>
+        </select>
+      </div>
+      <div class="date">
+        <label for="date">
+          <p>Date</p>
+        </label>
+        <input type="date" name="date" id="date" required>
+      </div>
+      <div class="time">
+        <label for="time">
+          <p>Time</p>
+        </label>
+        <input type="time" name="time" id="time">
+      </div>
+      <div class="request">
+        <label for="request">
+          <p>Special Request (Optional)</p>
+        </label>
+        <textarea name="request" id="request"></textarea>
+      </div>
+      <button type="submit" id="button">Reserve Now</button>
+    </div>
+  </form>
+  <article>
+    <h1>Thank You!</h1>
+    <h2>You will receive a confirmation email shortly</h2>
+    <h3>In the meantime, here is the menu</h3>
+    <button><a href="menu.html">Menu</a></button>
+  </article>
+  <footer>
+    <div class="footer-main">
+      <div class="end-name">
+        <h2>Sushi Paradise</h2>
+        <div class="icons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+      </div>
+      <div class="contacts">
+        <h5>Address:</h5>
+        <p>Via Roma, Padua, Italy</p>
+        <h5>Telephone</h5>
+        <p>+39 123 456 7890</p>
+        <h5>Email:</h5>
+        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7303161701161f1a0733141e121a1f5d101c1e">[email&#160;protected]</a></p>
+      </div>
+    </div>
+    <span class="disclaimer">This website is a demo project created for my portfolio. The restaurant presented here is
+      fictional and does not exist. All images are AI generated or taken from Google.</span>
+  </footer>
+  <script defer>
+    const form = document.querySelector("form");
+    const intro = document.querySelector(".intro");
+    const article = document.querySelector("article");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();  
+      await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form)
+    });
+      form.style.display = "none";
+      intro.style.display = "none";
+      article.style.display = "block";
+      
+    })
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".menu");
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      menu.classList.toggle("active");
+    })
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        menu.classList.remove('active');
+        hamburger.classList.remove("active");
+      }
+    });
+  </script>
+</body>
+</html>

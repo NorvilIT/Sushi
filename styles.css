@@ -1,0 +1,865 @@
+html,
+body {
+  font-size: 20px;
+  overflow-x: hidden;
+  font-family: 'Satoshi', 'Cormorant Garamond', serif;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  font-weight: 500;
+}
+
+#sfondo-intro {
+  height: 100vh;
+  background-image: url('img/sfondo.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+.logo p {
+  cursor: pointer;
+}
+
+.navigazione {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.nav nav ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  margin-left: -3.7rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#news a {
+  color: unset !important;
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  /* Posiziona la linea sotto il testo */
+  left: 50%;
+  /* Punto di partenza al centro */
+  width: 0;
+  /* Linea inizialmente invisibile */
+  height: 2px;
+  /* Spessore della linea */
+  background-color: rgb(255, 255, 255);
+  /* Colore della linea */
+  transform: translateX(-50%);
+  /* Centra la linea */
+  transition: width 0.3s ease;
+  /* Animazione della larghezza */
+}
+
+.underline:hover::after {
+  width: 100%;
+  /* La linea si espande completamente */
+}
+
+.intro {
+  margin-top: 12rem;
+}
+
+.intro-1 {
+  text-align: center;
+  font-family: 'playfair display';
+  letter-spacing: 0.6rem;
+}
+
+.intro-2 {
+  width: 11rem;
+  margin: -1rem auto 2rem auto;
+  text-align: center;
+}
+
+.book {
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  color: black ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.book a {
+  color: black;
+}
+
+.center {
+  width: 7rem;
+  margin: auto;
+}
+
+.book:hover {
+  background-color: rgb(198, 198, 198);
+  transition: background-color 0.2s linear 0s;
+}
+
+h2 {
+  font-family: playfair display;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.menu {
+  width: 100%;
+  height: auto;
+}
+
+.menu h2 {
+  text-align: center;
+  font-family: 'playfair display';
+  width: 100%;
+  margin: 5rem auto 2rem auto;
+}
+
+.menu p {
+  width: 25rem;
+  margin: -1rem auto 2rem auto;
+  text-align: center;
+  color: rgb(90, 84, 84);
+}
+
+.menu span {
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  width: 10.72899rem;
+  margin: -1rem auto 0 auto;
+  font-weight: 600;
+}
+
+.menu span a {
+  text-decoration: none;
+  color: black;
+}
+
+.underline2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.underline2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  /* Posiziona la linea sotto il testo */
+  left: 50%;
+  /* Punto di partenza al centro */
+  width: 100%;
+  /* Linea inizialmente invisibile */
+  height: 1px;
+  /* Spessore della linea */
+  background-color: rgb(0, 0, 0);
+  /* Colore della linea */
+  transform: translateX(-50%);
+  /* Centra la linea */
+  transition: width 0.3s ease;
+  /* Animazione della larghezza */
+}
+
+.underline2:hover::after {
+  width: 0;
+  /* La linea si espande completamente */
+}
+
+.menu-img {
+  margin: 4rem auto 8rem auto;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+.menu-img .transform {
+  width: 35%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.menu-img .transform img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+#story {
+  height: 110vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('img/sfondo2.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#story section {
+  width: 50%;
+  padding-top: 0.8rem;
+  line-height: 1.5;
+  padding-left: 2rem;
+}
+
+.underline3 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(198, 198, 198);
+}
+
+.underline3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  /* Posiziona la linea sotto il testo */
+  left: 50%;
+  /* Punto di partenza al centro */
+  width: 100%;
+  /* Linea inizialmente invisibile */
+  height: 2px;
+  /* Spessore della linea */
+  background-color: rgb(255, 255, 255);
+  /* Colore della linea */
+  transform: translateX(-50%);
+  /* Centra la linea */
+  transition: width 0.3s ease;
+  /* Animazione della larghezza */
+}
+
+.underline3:hover::after {
+  width: 0;
+  /* La linea si espande completamente */
+}
+
+.first-row-img {
+  margin: 12rem auto 0 auto;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  gap: 0.85rem;
+  position: relative;
+  overflow: visible;
+}
+
+.first-row-img img {
+  width: 35%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.second-row-img {
+  margin: 0 auto 12rem auto;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+.second-row-img img {
+  width: 35%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.opening-hours section {
+  margin: 0;
+}
+
+#opening-hours h2 {
+  text-align: center;
+  font-family: 'playfair display';
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+
+#opening-hours p {
+  margin: 0 auto 1rem auto;
+  text-align: center;
+  color: rgb(90, 84, 84);
+  font-size: 0.9rem;
+}
+
+#opening-hours h4 {
+  margin: 0 auto 1rem auto;
+  text-align: center;
+}
+
+.middle-img1 {
+  position: relative;
+  top: -6rem;
+}
+
+.middle-img2 {
+  position: relative;
+  top: 6rem;
+}
+
+#opening-hours span {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 4.399rem;
+  font-weight: 600;
+}
+
+#opening-hours a {
+  color: unset;
+}
+
+.news h2 {
+  text-align: center;
+  font-family: 'playfair display';
+  width: 100%;
+  margin: 5rem auto 2rem auto;
+}
+
+.news p {
+  width: 25rem;
+  margin: -1rem auto 2rem auto;
+  text-align: center;
+  color: rgb(90, 84, 84);
+}
+
+.news span {
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  width: 6.52899rem;
+  margin: -1rem auto 0 auto;
+  font-weight: 600;
+}
+
+.news-img {
+  margin: 4rem auto 0rem auto;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+.news-img .transform {
+  width: 35%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.news-img .transform img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.description-news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0.5rem auto;
+  width: 85%;
+}
+
+.second-new {
+  margin-left: 0.4rem;
+}
+
+.third-new {
+  margin-left: 0.5rem;
+}
+
+.description-news span {
+  color: rgb(90, 84, 84);
+  font-size: medium;
+}
+
+.description-news p {
+  position: relative;
+  top: -0.5rem;
+}
+
+.transform:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in 0s;
+}
+
+.transform img {
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  will-change: transform;
+}
+
+#news {
+  margin-bottom: 3rem;
+}
+
+footer {
+  background-color: #212121;
+  color: white;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.end-name {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.end-name h2 {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Playfair Display', serif;
+}
+
+.icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.icons i {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  transform: scale(1.2);
+}
+
+.contacts {
+  font-size: 0.95rem;
+  max-width: 250px;
+  line-height: 1.5;
+}
+
+.contacts h5 {
+  margin: 0.5rem 0 0 0;
+  font-weight: 600;
+}
+
+.contacts p {
+  margin: 0 0 0.5rem 0;
+  color: #d4d4d4;
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #b8b8b8;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hmenu {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  .menu {
+    padding-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .menu {
+    padding-top: 3rem;
+  }
+
+  .menu span {
+    width: 10.62899rem;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  html,
+  body {
+    font-size: 17px;
+  }
+
+  #story {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('img/sfondo2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: block;
+    background-attachment: scroll;
+  }
+
+  #story section h2 {
+    font-size: 1.2rem;
+  }
+
+  #story section {
+    width: 90%;
+  }
+
+  #opening-hours h2 {
+    font-size: 1.6rem;
+  }
+
+  #opening-hours h4 {
+    font-size: 1rem;
+  }
+
+  #opening-hours p {
+    font-size: 0.9rem;
+  }
+
+  .first-row-img {
+    margin: 8rem auto 0 auto;
+  }
+
+  .second-row-img {
+    margin: 0 auto 8rem auto;
+  }
+
+  .middle-img1 {
+    position: relative;
+    top: -4rem;
+  }
+
+  .middle-img2 {
+    position: relative;
+    top: 4rem;
+  }
+
+  .transform:hover img {
+    transform: unset;
+    transition: unset;
+  }
+
+  .transform img {
+    transition: unset;
+
+  }
+
+  .three {
+    display: none;
+  }
+
+  .two {
+    display: none;
+  }
+
+  .description-news {
+    width: 85%;
+  }
+
+  .news-img,
+  .menu.img {
+    margin: 4rem auto 0rem auto;
+    width: 85%;
+  }
+
+  .news-img .transform,
+  .menu-img .transform {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+  }
+
+  .news-img .transform img,
+  .menu-img .transform img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .intro {
+    margin-top: 8rem;
+    margin: 8rem 2rem;
+  }
+
+  .navigazione {
+    font-size: smaller;
+  }
+
+  .nav nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-left: -3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  html,
+  body {
+    font-size: 15px;
+  }
+
+  #story {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('img/sfondo2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: block;
+  }
+
+  #story section h2 {
+    font-size: 1.2rem;
+  }
+
+  #story section {
+    width: 90%;
+  }
+
+  #opening-hours h2 {
+    font-size: 1.6rem;
+  }
+
+  #opening-hours h4 {
+    font-size: 1rem;
+  }
+
+  #opening-hours p {
+    font-size: 0.9rem;
+  }
+
+  .first-row-img {
+    margin: 8rem auto 0 auto;
+  }
+
+  .second-row-img {
+    margin: 0 auto 8rem auto;
+  }
+
+  .middle-img1 {
+    position: relative;
+    top: -4rem;
+  }
+
+  .middle-img2 {
+    position: relative;
+    top: 4rem;
+  }
+
+  .transform:hover img {
+    transform: unset;
+    transition: unset;
+  }
+
+  .transform img {
+    transition: unset;
+
+  }
+
+  .three {
+    display: none;
+  }
+
+  .two {
+    display: none;
+  }
+
+  .description-news {
+    width: 85%;
+  }
+
+  .news-img,
+  .menu.img {
+    margin: 4rem auto 0rem auto;
+    width: 85%;
+  }
+
+  .news-img .transform,
+  .menu-img .transform {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+  }
+
+  .news-img .transform img,
+  .menu-img .transform img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .intro {
+    margin-top: 8rem;
+    margin: 8rem 2rem;
+  }
+
+  .navigazione {
+    font-size: smaller;
+  }
+
+  .nav nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-left: -3rem;
+  }
+
+  .transform img,
+  .transform:hover img,
+  .book,
+  .icons i,
+  .underline::after,
+  .underline2::after,
+  .underline3::after {
+    transition: none !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+   .navigazione {
+    padding: 0; 
+  }
+  
+  .logo {
+    font-size: large;
+    padding: 0 1rem;
+  }
+  
+  .hamburger {
+    display: block;
+    margin-top: 14px;
+    cursor: pointer;
+    height: 31px;
+    width: 39px;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding: 2px 1rem 0 1rem;
+  }
+  
+  .hamburger:hover {
+    background-color: #d4d4d433;
+  }
+
+  .hamburger span {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    display: block;
+    margin: 5px auto;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hmenu {
+    display: block;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 40vh;
+    background-color: #111715f1;
+    top: 47px;
+    left: 100%;
+  }
+
+  .hmenu.active {
+    left: 0;
+  }
+  
+  .hmenu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hmenu li {
+    list-style: none;
+    font-size: 18px;
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .hmenu li:active {
+   background-color: #7d8f8421;
+  }
+  
+  .vanish {
+    display: none;
+  }
+}
